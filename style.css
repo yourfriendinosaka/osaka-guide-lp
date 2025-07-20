@@ -61,7 +61,7 @@ body {
 /* About Us Section */
 .about-us {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: #f8f4e6;
     text-align: center;
 }
 
@@ -131,6 +131,7 @@ body {
 .tours-section {
     padding: 50px 20px;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .tour-item h4,
@@ -210,7 +211,7 @@ body {
 
 /* Why Choose Us Section */
 .why-us {
-    background-color: #f9f9f9;
+    background-color: #f8f4e6;
     padding: 50px 20px;
     text-align: center;
 }
@@ -274,8 +275,8 @@ body {
 /* How It Works Section */
 .how-it-works-section {
     padding: 50px 20px;
-    text-align: center; /* 中央揃え */
-    background-color: #fff;
+    text-align: center;
+    background-color: #f8f4e6;
 }
 
 .how-it-works-section h2 {
@@ -283,30 +284,53 @@ body {
     margin-bottom: 30px;
 }
 
-.how-it-works-section ol {
-    list-style-position: inside; /* 番号を内側に表示 */
-    padding: 0;
-    max-width: 800px; /* 他のセクションの幅に合わせる */
-    margin: 0 auto; /* 中央揃え */
-    text-align: left; /* リスト項目は左揃え */
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.how-it-works-section li {
-    margin-bottom: 20px;
-    font-size: 1.1em; /* 他のテキストと同じサイズ */
-    line-height: 1.6; /* 他のテキストと同じ行間 */
+.step-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
 }
 
-.how-it-works-section li h3 {
-    font-size: 1.5em; /* 他のh3と同じサイズ */
-    margin-bottom: 5px;
-    color: #d35400; /* 強調色 */
+.step-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff6347;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.step-icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.step-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.step-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
 }
 
 /* Testimonials Section */
 .testimonials-section {
     padding: 50px 20px;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .testimonial-item {
@@ -316,7 +340,11 @@ body {
 
 .testimonial-item img {
     border-radius: 50%;
-    margin-bottom: 20px;
+    width: 100px; /* 2倍のサイズ */
+    height: 100px; /* 2倍のサイズ */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px; /* 中央揃えと下マージン */
 }
 
 .testimonial-item blockquote {
@@ -370,6 +398,23 @@ body {
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+/* Final CTA Button Section */
+.final-cta-button-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+}
+
+.final-cta-button-section p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.final-cta-button-section .cta-button {
+    display: inline-block;
+    margin-top: 10px;
 }
 
 /* Final CTA Section */
