@@ -1,0 +1,413 @@
+/* Basic Styles */
+body {
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f9f9f9;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e5533d;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us .guide-profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.about-us .guide-profile img {
+    border-radius: 50%;
+}
+
+.about-us .guide-intro {
+    flex: 1;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* City Selection Section */
+.city-selection {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.city-selection h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.city-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.city-link {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 40px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: all 0.3s;
+}
+
+.city-link:hover {
+    background-color: #ff6347;
+    color: white;
+    border-color: #ff6347;
+}
+
+/* Tours Section */
+.tours-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tour-item h4,
+.tour-item p {
+    text-align: center;
+}
+
+.tour-city {
+    margin-bottom: 50px;
+}
+
+.tour-city h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tour-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tour-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-item h4 {
+    font-size: 1.5em;
+    padding: 15px;
+    margin: 0;
+}
+
+.tour-item p {
+    padding: 0 15px 15px;
+    line-height: 1.5;
+}
+
+/* Photo Gallery Section */
+.photo-gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background: white;
+}
+
+.photo-gallery h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Why Choose Us Section */
+.why-us {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.why-us li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.why-us li strong {
+    color: #d35400;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.pricing-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.pricing-item h3 {
+    margin-top: 0;
+    color: #d35400;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.pricing-note {
+    margin-top: 30px;
+    font-style: italic;
+    color: #666;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    padding: 50px 20px;
+    text-align: center; /* 中央揃え */
+    background-color: #fff;
+}
+
+.how-it-works-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.how-it-works-section ol {
+    list-style-position: inside; /* 番号を内側に表示 */
+    padding: 0;
+    max-width: 800px; /* 他のセクションの幅に合わせる */
+    margin: 0 auto; /* 中央揃え */
+    text-align: left; /* リスト項目は左揃え */
+}
+
+.how-it-works-section li {
+    margin-bottom: 20px;
+    font-size: 1.1em; /* 他のテキストと同じサイズ */
+    line-height: 1.6; /* 他のテキストと同じ行間 */
+}
+
+.how-it-works-section li h3 {
+    font-size: 1.5em; /* 他のh3と同じサイズ */
+    margin-bottom: 5px;
+    color: #d35400; /* 強調色 */
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial-item {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial-item img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-item blockquote {
+    /* border-left: 4px solid #d35400; */
+    /* padding-left: 20px; */
+    font-style: italic;
+    margin: 0;
+    text-align: center; /* 中央揃え */
+}
+
+.testimonial-item footer {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: white;
+}
+
+.contact-section h2 {
+    color: #d35400;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Pre-Contact Section */
+.pre-contact-section {
+    background-color: #d35400;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.pre-contact-section p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.google-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Final CTA Section */
+.final-cta {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.final-cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.final-cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .tour-list {
+        grid-template-columns: 1fr;
+    }
+
+    .city-links {
+        flex-direction: column;
+    }
+
+    .google-form-container iframe {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+
